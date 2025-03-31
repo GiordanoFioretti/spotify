@@ -22,6 +22,20 @@
   gap: 16px;
 }
 
+.menu-button {
+  color: #ffffff;
+  font-size: 20px;
+  padding: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.menu-button:hover {
+  transform: scale(1.1);
+}
+
 .nav-button {
   background-color: rgba(0, 0, 0, 0.7);
   border: none;
@@ -185,6 +199,80 @@
   transform: scale(1.06);
   background-color: #1ed760;
 }
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .main-content {
+    padding: 12px 16px 90px;
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .playlist-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 16px;
+  }
+
+  .user-button span {
+    display: none;
+  }
+
+  .header-buttons {
+    gap: 8px;
+  }
+
+  .content-section h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .main-content {
+    padding: 16px 24px 90px;
+  }
+
+  .featured-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .playlist-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .featured-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .playlist-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .main-content {
+    padding: 24px 40px 90px;
+  }
+
+  .featured-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+
+  .playlist-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 32px;
+  }
+
+  .content-section h2 {
+    font-size: 28px;
+  }
+}
+
 
 .featured-item .play-button {
   position: static;

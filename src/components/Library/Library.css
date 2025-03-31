@@ -1,0 +1,99 @@
+.library-container {
+  padding: 20px;
+  color: white;
+}
+
+.library-header {
+  margin-bottom: 30px;
+}
+
+.library-header h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.library-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.section-button {
+  background: transparent;
+  border: 1px solid #ffffff40;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.section-button:hover {
+  background: #ffffff20;
+}
+
+.section-button.active {
+  background: white;
+  color: black;
+}
+
+.sort-select {
+  background: #ffffff10;
+  border: 1px solid #ffffff40;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.library-item {
+  background: #ffffff10;
+  border-radius: 8px;
+  padding: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.library-item:hover {
+  background: #ffffff20;
+}
+
+.library-item img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.library-item .artist-image {
+  border-radius: 50%;
+}
+
+.library-item h3 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.library-item p {
+  font-size: 0.9rem;
+  color: #ffffff80;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

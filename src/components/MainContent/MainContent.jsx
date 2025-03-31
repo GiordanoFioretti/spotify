@@ -2,6 +2,14 @@ import React from 'react';
 import './MainContent.css';
 import playIcon from '../../assets/icons/play.svg';
 import { getRandomImage } from '../../data/playlistImages';
+import { getProfileImageUrl } from '../../utils/profileImage';
+
+const toggleSidebar = () => {
+  const currentState = localStorage.getItem('sidebarVisible');
+  const newState = currentState === null || currentState === 'true' ? false : true;
+  localStorage.setItem('sidebarVisible', JSON.stringify(newState));
+  window.dispatchEvent(new Event('storage'));
+};
 
 const MainContent = () => {
   const featuredPlaylists = [
@@ -47,6 +55,9 @@ const MainContent = () => {
     <div className="main-content">
       <header className="main-header">
         <div className="header-buttons">
+          <button className="nav-button menu-button" onClick={toggleSidebar}>
+            <i className="fas fa-bars"></i>
+          </button>
           <button className="nav-button">
             <i className="fas fa-chevron-left"></i>
           </button>
@@ -56,7 +67,7 @@ const MainContent = () => {
         </div>
         <div className="user-menu">
           <button className="user-button">
-            <img src="https://via.placeholder.com/28" alt="User" />
+            <img src={getProfileImageUrl()} alt="User" />
             <span>Il tuo profilo</span>
             <i className="fas fa-caret-down"></i>
           </button>
