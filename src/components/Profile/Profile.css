@@ -1,0 +1,86 @@
+.profile-container {
+  padding: 24px;
+  color: white;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 24px;
+  object-fit: cover;
+}
+
+.profile-info h1 {
+  font-size: 48px;
+  margin: 0 0 12px 0;
+}
+
+.profile-stats {
+  font-size: 16px;
+  color: #b3b3b3;
+}
+
+.playlists-section h2 {
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.playlists-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.playlist-card {
+  background: #282828;
+  border-radius: 8px;
+  padding: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.playlist-card:hover {
+  background: #333333;
+}
+
+.playlist-card img {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.playlist-card h3 {
+  font-size: 18px;
+  margin: 0 0 16px 0;
+}
+
+.playlist-songs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.song-item {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.song-title {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.song-artist {
+  font-size: 14px;
+  color: #b3b3b3;
+}

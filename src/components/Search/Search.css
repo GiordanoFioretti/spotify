@@ -1,0 +1,162 @@
+.search-container {
+  padding: 24px;
+  color: #ffffff;
+}
+
+.search-header {
+  margin-bottom: 32px;
+}
+
+.search-input-container {
+  position: relative;
+  max-width: 364px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000000;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border-radius: 24px;
+  border: none;
+  background-color: #ffffff;
+  font-size: 14px;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-filters {
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+}
+
+.filter-button {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.filter-button.active {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.recent-searches,
+.genres {
+  margin-bottom: 40px;
+}
+
+.recent-searches h2,
+.genres h2,
+.search-results h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.recent-searches-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.recent-search-item {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.recent-search-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.recent-search-item img {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  margin-right: 16px;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-info h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.item-info p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.genres-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 24px;
+}
+
+.genre-card {
+  aspect-ratio: 1;
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.genre-card:hover {
+  transform: scale(1.02);
+}
+
+.genre-card h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 24px;
+}
+
+.play-button {
+  background-color: #1db954;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 16px;
+}
+
+.play-button:hover {
+  transform: scale(1.06);
+  background-color: #1ed760;
+}
